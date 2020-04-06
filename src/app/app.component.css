@@ -1,0 +1,24 @@
+.app-root {
+width: 500px;
+height: 350px;
+margin: 0 auto;
+box-shadow: -1px 3px 19px -5px rgba(0, 0, 0, 0.75);
+position: relative;
+}
+h2 {
+text-align: center;
+padding: 20px;
+}
+.next_btn {
+ position: absolute;
+ bottom: 20px;
+ right: 20px;
+ padding: 5px 20px;
+}
+.result {
+width: 500px;
+margin: 30px auto
+}
+.result p {
+text-align: center;
+}

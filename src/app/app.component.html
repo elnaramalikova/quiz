@@ -1,0 +1,24 @@
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+
+<!-- Highlight Card -->
+  <div class='app-root'>
+    <ng-container *ngIf="questions">
+
+      <h2 *ngFor="let ques of questions[0].question">{{ques}}</h2>
+
+      <label (change)="change()" *ngFor="let options of questions[0].option" ><br>
+        <input type="radio" name="answer" value="{{options.name}}" required>
+        {{options.name}} {{options.correct}}
+      </label>
+
+    </ng-container>
+    <div class="result">
+    <p>Correct - {{winScore}}</p>
+    <p>Wrong - {{loseScore}}</p>
+  </div>
+
+        <button class='next_btn' (click)="getnew()">Next</button>
+  </div>
+
+
+<button (reset)="reset()">Reset</button>
