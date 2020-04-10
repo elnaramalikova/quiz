@@ -99,6 +99,11 @@ getnew = () => {
   }
   }
 
+  reset = () => {
+    // tslint:disable-next-line:prefer-for-of
+    location.reload();
+    }
+
 
 
 }
